@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regulatory-analyzer"
+version = "0.1.0"
+description = "Regulatory text analysis tool"
+authors = [{name = "Your Name"}]
+readme = "README.md"
+requires-python = ">=3.7"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=src --cov-report=term-missing"
+pythonpath = ["."] 
